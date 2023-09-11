@@ -21,3 +21,71 @@
             input.close();
         }
     }
+
+    atau
+
+    public class Pertemuan3Lingkaran {
+
+    public static void main(String[] args) {
+        //variable
+        double luas;
+        double r = 10.5;
+        double keliling;
+        //konstanta
+        final double phi = 3.14;
+        //rumus
+        luas = phi * r * r;
+        keliling = 2 * phi * r;
+        
+        System.out.println("Luas lingkaran: " + luas);
+        System.out.print("Keliling lingkaran: " + keliling);
+    }
+}
+
+----------------------------------------------------------------------------------------------
+
+Pengkondisian
+-------------
+hint: setiap orang pasti punya pilihan
+algoritma(pseudocode)
+    if hari hujan then saya bawa payung
+    else
+    saya tidak bawa payung
+
+sintaks java:
+    if(kondisiTrue){
+        statement 2
+    }
+    else {
+        statement 2
+    }
+
+contoh: 
+    if (hari == "hujan"){
+        System.out.println("Saya bawa payung");
+    }
+    else{
+        System.out.println("Saya tidak bawa payung");
+    }
+
+----------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Pertemuan3Lingkaran {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan kondisi hari (hujan/cerah)? ");
+        String hari = input.nextLine();
+        
+        if (hari.equals("hujan")){
+            System.out.println("Saya bawa payung");
+        }
+        else{
+            System.out.println("Saya tidak bawa payung");
+        }
+    }
+}
+
+========================================================================================
