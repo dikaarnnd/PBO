@@ -1,0 +1,23 @@
+1.  Program Java menghitung luas dan keliling lingkaran
+
+    import java.util.Scanner;
+    
+    public class Pertemuan3 {
+    
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            
+            double phi  = 3.14;
+            
+            System.out.print("Masukkan jari-jari: ");
+            double jari = input.nextDouble();
+            
+            double luas = phi * jari * jari;
+            double keliling = 2 * phi * jari;
+            
+            System.out.println("Luas lingkaran: " + luas);
+            System.out.print("Keliling lingkaran: " + keliling);
+            
+            input.close();
+        }
+    }
