@@ -1,0 +1,84 @@
+for
+
+/*
+Anak ayam turun 10 pergi satu tinggal 9
+Anak ayam turun 9 pergi satu tinggal 8
+Anak ayam turun 8 pergi satu tinggal 7
+Anak ayam turun 7 pergi satu tinggal 6
+Anak ayam turun 6 pergi satu tinggal 5
+Anak ayam turun 5 pergi satu tinggal 4
+Anak ayam turun 4 pergi satu tinggal 3
+Anak ayam turun 3 pergi satu tinggal 2
+Anak ayam turun 2 pergi satu tinggal 1
+Anak ayam turun 1 pergi satu tinggal 0
+
+tinggal induknya.
+ */
+public class LatihanPertemuan3For {
+    public static void main(String[] args) {
+        for(int i=10; i>0; i--){
+            System.out.println("Anak ayam turun "+ i +" pergi satu tinggal "+ (i-1));
+        }
+        System.out.println("");
+        System.out.print("Tinggal Induknya.");
+    }
+    
+}
+============================================================================================================================
+While
+
+/*
+Anak ayam turun 10 pergi satu tinggal 9
+Anak ayam turun 9 pergi satu tinggal 8
+Anak ayam turun 8 pergi satu tinggal 7
+Anak ayam turun 7 pergi satu tinggal 6
+Anak ayam turun 6 pergi satu tinggal 5
+Anak ayam turun 5 pergi satu tinggal 4
+Anak ayam turun 4 pergi satu tinggal 3
+Anak ayam turun 3 pergi satu tinggal 2
+Anak ayam turun 2 pergi satu tinggal 1
+Anak ayam turun 1 pergi satu tinggal 0
+
+tinggal induknya.
+ */
+public class LatihanPertemuan3While {
+    public static void main(String[] args) {
+        int i = 10;
+        while(i>0){
+            System.out.println("Anak ayam turun "+ i +" pergi satu tinggal "+ (i-1));
+            i--;
+        }
+        System.out.println("");
+        System.out.print("Tinggal Induknya.");
+    }
+}
+============================================================================================================================
+Do while
+
+/*
+Anak ayam turun 10 pergi satu tinggal 9
+Anak ayam turun 9 pergi satu tinggal 8
+Anak ayam turun 8 pergi satu tinggal 7
+Anak ayam turun 7 pergi satu tinggal 6
+Anak ayam turun 6 pergi satu tinggal 5
+Anak ayam turun 5 pergi satu tinggal 4
+Anak ayam turun 4 pergi satu tinggal 3
+Anak ayam turun 3 pergi satu tinggal 2
+Anak ayam turun 2 pergi satu tinggal 1
+Anak ayam turun 1 pergi satu tinggal 0
+
+tinggal induknya.
+ */
+public class Pertemuan3DoWhile {
+    public static void main(String[] args) {
+        int i = 10;
+        do{
+            System.out.println("Anak ayam turun "+ i +" pergi satu tinggal "+ (i-1));
+            i--;
+        }
+        while(i>0);
+        System.out.println("");
+        System.out.print("Tinggal induknya.");
+    }
+}
+============================================================================================================================
