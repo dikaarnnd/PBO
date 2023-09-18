@@ -1,0 +1,67 @@
+Method Parameter
+
+public class Pertemuan4MethodParameter {
+    static void methodKu(String namaDepan, String namaBelakang){//nama adalah parameter
+        String nama = namaDepan + " " + namaBelakang;
+        System.out.println("Selamat datang "+ nama);
+    }
+    public static void main(String[] args) {
+        //pemanggilan method dgn argumen
+        methodKu("Dika","Arnanda Putra");//dika adalah argumen
+    }
+}
+===========================================================================================================================
+Method Return
+
+public class Pertemuan4MethodReturn {
+    static double nilaiTugas (int x){
+        double nilai = 0.2 * x;
+        return nilai;
+    }
+    public static void main(String[] args) {
+        //cara 1
+        System.out.println("Nilai Tugas = "+ nilaiTugas(80));
+        
+        //cara 2
+        double nilai;
+        nilai = nilaiTugas(80);
+        System.out.println("Nilai Tugas = "+ nilai);
+        
+        //cara 3
+        if(nilaiTugas(80) > 10){
+            System.out.println("Anda Lulus");
+        }
+    }
+}
+===========================================================================================================================
+Method Rerata
+
+import java.util.Scanner;
+public class Pertemuan4MethodRerata {
+    static int i = 0;
+    static double total(){
+        Scanner sc = new Scanner(System.in);
+        double bilangan;
+        double total = 0;
+        char jwb = 'y'; //inisialisasi
+        double rata2 = 0;
+        //int i = 0;
+        while(jwb == 'y'){
+            i++;
+            System.out.print("Masukkan bilangan: ");
+            bilangan = sc.nextDouble();
+            total = total + bilangan;
+            System.out.print("Ingin memasukkan bilangan lagi? [y/t] ");
+            jwb = sc.next().charAt(0);
+        }
+        return total;
+    }
+    static double rerata(double nilaiTotal, int jmlData){
+        return nilaiTotal / jmlData;
+    }
+    public static void main(String[] args) {
+        double t = total();
+        System.out.println("Nilai total data = "+ t);
+        System.out.println("Nilai rerata data = "+ rerata(t,i));
+    }
+}
