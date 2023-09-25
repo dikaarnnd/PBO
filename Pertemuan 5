@@ -1,0 +1,89 @@
+package pbo.pertemuan5;
+public class Pertemuan5 {
+
+    public static void main(String[] args) {
+        int bilA = 40;
+        int bilB = 30;
+        int bilC = 50;
+        
+        if (bilA > bilB & bilA > bilC){
+            System.out.print(bilA+" lebih besar dari "+bilB+" dan "+bilC);
+        }
+        else if (bilA < bilB & bilB > bilC){
+            System.out.println(bilA+" lebih kecil dari "+bilB+" dan "+bilB+"lebih besar dari "+bilC);
+        }
+        else if (bilA < bilB & bilA < bilC){
+            System.out.println(bilA+" lebih kecil dari "+bilB+" dan "+bilC);
+        }
+        else{
+            System.out.println(bilA+" dan "+bilB+" lebih kecil dari "+bilC);
+        }
+    }
+}
+===========================================================================================================================
+package pbo.pertemuan5;
+public class LatihanMethod {
+    //method void
+    static void bilangan(){
+        System.out.println("ini adalah fungsi bilangan");
+    }
+    //method return value
+    static int max(){
+        int a = 100;
+        return a;
+    }
+
+    public static void main(String[] args) {
+        //pemanggilan method void
+        bilangan();
+        bilangan();
+        bilangan();
+        
+        //pemanggilan method return value
+        System.out.println("Nilai max = "+max());
+        if(max() > 0){
+            System.out.println(max()+" adalah bilangan positif");
+        }
+        for(int i = 0; i < max(); i++){
+            System.out.println("Nilai i = "+i);
+        }
+    }
+}
+===========================================================================================================================
+public class Bilangan {
+    public static void max1() {
+        int bilA = 30;
+        int bilB = 20;
+        int bilC = 10;
+        
+        if ((bilA > bilB) && (bilA > bilC)){
+            System.out.println("max = "+ bilA);
+        }
+        else if ((bilB > bilA) && (bilB > bilC)){
+            System.out.println("max = "+ bilB);
+        }
+        else{
+            System.out.println("max = "+ bilC);
+        }
+    }
+    public static void max2() {
+        int bilA = 30;
+        int bilB = 200;
+        int bilC = 1000;
+        
+        int terbesar = bilA;
+        if (bilB > terbesar){
+            terbesar = bilB;
+        }
+        else if (bilC > terbesar){
+            terbesar = bilC;
+        }
+        System.out.println("Nilai max = "+ terbesar);
+    }
+    public static void main(String[] args) {
+        max1();
+        max2();
+        LatihanMethod.main(args);//pemanggilan void main dari class LatihanMethod
+    }
+}
+===========================================================================================================================
